@@ -338,7 +338,8 @@ export class Registerer {
     extraHeaders.push("Contact: " + this.generateContactHeader(this.expires));
     // this is UA.C.ALLOWED_METHODS, removed to get around circular dependency
     extraHeaders.push(
-      "Allow: " + ["ACK", "CANCEL", "INVITE", "MESSAGE", "BYE", "OPTIONS", "INFO", "NOTIFY", "REFER"].toString()
+      "Allow: " +
+        ["ACK", "CANCEL", "INVITE", "MESSAGE", "BYE", "OPTIONS", "INFO", "SUBSCRIBE", "NOTIFY", "REFER"].toString()
     );
 
     // Call-ID: All registrations from a UAC SHOULD use the same Call-ID

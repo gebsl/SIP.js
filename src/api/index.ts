@@ -20,6 +20,8 @@ export * from "./messager-message-options";
 export * from "./messager-options";
 export * from "./messager";
 export * from "./notification";
+export * from "./notifier";
+export * from "./notifier-options";
 export * from "./publisher-options";
 export * from "./publisher-publish-options";
 export * from "./publisher-state";
